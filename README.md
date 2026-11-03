@@ -4,7 +4,12 @@
 
 内置 `http://` / `https://` 传输，以及 Tauri 2.x 的 `ipc://` 传输（Windows 下走 `http://ipc.localhost`）。
 
-> 本项目位于 VarJson 仓库根目录的 `unireq/`，是一个**独立项目**，不参与根目录的 npm workspace，也不被 `varjson` 依赖。
+> 本项目位于 VarJson 仓库根目录的 `unireq/`，是一个**独立项目**，不参与根目录的 npm workspace；`varjson` 以**可选 peer 依赖**的方式使用它。
+
+## 发布
+
+发布为**手工流程**（不使用 NPM_TOKEN）：CI 只负责 tag 触发的构建与 GitHub Release。
+完整步骤见 [PUBLISHING.md](./PUBLISHING.md)。
 
 ## 安装与运行
 
